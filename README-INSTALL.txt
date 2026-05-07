@@ -1,33 +1,20 @@
-Afrikanische Hilfe Düsseldorf - No Database Professional Upgrade
+Afrikanische Hilfe Düsseldorf - Multi-page upgrade
 
-This package is made for the existing GitHub Pages website.
-It does NOT require a database, server, hosting payment, or backend.
-
-Included:
-- Mobile-ready sticky navigation
-- Dark Afro-lounge professional homepage
-- Events section
-- Volunteer/contact form using mailto
-- WhatsApp button
-- GoFundMe QR section
-- SEO/meta tags
-- Impressum placeholder page
-- Datenschutz placeholder page
-- Existing images/video assets
+What changed:
+- Separate pages instead of one long scrolling page
+- Navigation starts with Startseite/Home
+- Programme flyer is shown on the landing page
+- Projects page added with single mothers support, widows welfare support and community gallery
+- Secure FormSubmit contact form on Volunteer page
+- All uploaded project images included in assets/images
 
 Install:
-1. Unzip this package.
-2. Copy all files into:
+1. Unzip everything into:
    C:\Projects\afrikanische-hilfe-duesseldorf
-3. Choose Replace files when Windows asks.
-4. In CMD run:
-   cd C:\Projects\afrikanische-hilfe-duesseldorf
+2. Choose Replace files.
+3. Run:
    git status
    git add .
-   git commit -m "Add no database professional NGO upgrade"
+   git commit -m "Convert site to multi page structure with welfare projects"
    git pull --rebase origin main
    git push origin main
-
-Important:
-- Impressum and Datenschutz are placeholders. Replace placeholder text with correct legal information.
-- The contact form opens the visitor's email app. No database is used.
