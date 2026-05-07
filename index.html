@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder und Familien durch Alphabetisierung, Computerkurse, Musikunterricht und Integrationsangebote." />
-  <title>Afrikanische Hilfe Düsseldorf</title>
+  <meta name="description" content="Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder, Jugendliche und Familien mit Bildung, Computerkursen, Kultur, Musik und Integration." />
+  <meta name="keywords" content="Afrikanische Hilfe Düsseldorf, Integration Düsseldorf, Computerkurs Düsseldorf, Alphabetisierung, African community Düsseldorf" />
+  <meta property="og:title" content="Afrikanische Hilfe Düsseldorf" />
+  <meta property="og:description" content="Bildung, Kultur und Integration für afrikanische Familien in Düsseldorf." />
+  <meta property="og:image" content="assets/images/classroom-activity.jpg" />
+  <meta property="og:type" content="website" />
+  <title>Afrikanische Hilfe Düsseldorf | Bildung • Kultur • Integration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Afrikanische Hilfe Düsseldorf home">
       <span class="brand-mark">AH</span>
       <span>Afrikanische Hilfe<br><small>Düsseldorf</small></span>
     </a>
-    <nav class="nav" aria-label="Main navigation">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#about" data-de="Über uns" data-en="About">Über uns</a>
       <a href="#programmes" data-de="Programme" data-en="Programmes">Programme</a>
-      <a href="#projects" data-de="Projekte" data-en="Projects">Projekte</a>
-      <a href="#gallery" data-de="Galerie" data-en="Gallery">Galerie</a>
+      <a href="#events" data-de="Events" data-en="Events">Events</a>
       <a href="#support" data-de="Unterstützen" data-en="Support">Unterstützen</a>
+      <a href="#volunteer" data-de="Mitmachen" data-en="Volunteer">Mitmachen</a>
       <a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a>
     </nav>
     <button class="lang-toggle" id="langToggle" type="button">EN</button>
@@ -35,38 +42,43 @@
       <div class="pattern-overlay"></div>
       <div class="hero-content reveal">
         <p class="eyebrow" data-de="Bildung • Kultur • Integration" data-en="Education • Culture • Integration">Bildung • Kultur • Integration</p>
-        <h1 data-de="Gemeinschaft stärken durch Bildung, Sprache und Kultur" data-en="Empowering community through education, language and culture">Gemeinschaft stärken durch Bildung, Sprache und Kultur</h1>
-        <p class="hero-text" data-de="Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder und Familien mit Alphabetisierung, Computerkursen, Musikangeboten und gemeinschaftlicher Integrationshilfe." data-en="Afrikanische Hilfe Düsseldorf supports women, children and families with literacy, computer training, music activities and community-based integration support.">Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder und Familien mit Alphabetisierung, Computerkursen, Musikangeboten und gemeinschaftlicher Integrationshilfe.</p>
+        <h1 data-de="Ein Zuhause für Lernen, Kultur und Gemeinschaft" data-en="A home for learning, culture and community">Ein Zuhause für Lernen, Kultur und Gemeinschaft</h1>
+        <p class="hero-text" data-de="Afrikanische Hilfe Düsseldorf stärkt Frauen, Kinder, Jugendliche und Familien durch Alphabetisierung, digitale Bildung, Musik und gemeinschaftliche Integrationsangebote." data-en="Afrikanische Hilfe Düsseldorf empowers women, children, young people and families through literacy, digital education, music and community-based integration support.">Afrikanische Hilfe Düsseldorf stärkt Frauen, Kinder, Jugendliche und Familien durch Alphabetisierung, digitale Bildung, Musik und gemeinschaftliche Integrationsangebote.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#support" data-de="Jetzt unterstützen" data-en="Support now">Jetzt unterstützen</a>
-          <a class="btn secondary" href="#programmes" data-de="Programme ansehen" data-en="View programmes">Programme ansehen</a>
+          <a class="btn secondary" href="#volunteer" data-de="Mitmachen" data-en="Get involved">Mitmachen</a>
         </div>
       </div>
-      <div class="hero-card reveal delay">
+      <aside class="hero-card reveal delay">
         <strong data-de="Wöchentliche Kurse" data-en="Weekly classes">Wöchentliche Kurse</strong>
         <span>Donnerstag 17:00–19:00</span>
         <span>Samstag 16:00–18:00</span>
         <span>Rosmarstraße 31, 40235 Düsseldorf</span>
-      </div>
+      </aside>
     </section>
 
-    <section class="impact section-pad">
+    <section class="impact section-pad" aria-label="Impact numbers">
       <div class="impact-grid">
         <div><strong>2</strong><span data-de="Kurstermine pro Woche" data-en="Sessions per week">Kurstermine pro Woche</span></div>
         <div><strong>4+</strong><span data-de="Lernbereiche" data-en="Learning areas">Lernbereiche</span></div>
+        <div><strong>25€</strong><span data-de="hilft mit Lernmaterial" data-en="supports learning materials">hilft mit Lernmaterial</span></div>
         <div><strong>100%</strong><span data-de="Gemeinschaftlich getragen" data-en="Community driven">Gemeinschaftlich getragen</span></div>
-        <div><strong>1</strong><span data-de="Ziel: Chancen schaffen" data-en="Goal: create opportunity">Ziel: Chancen schaffen</span></div>
       </div>
     </section>
 
     <section class="about section-pad" id="about">
       <div class="section-head">
         <p class="eyebrow" data-de="Wer wir sind" data-en="Who we are">Wer wir sind</p>
-        <h2 data-de="Ein afrikanisches Bildungs- und Kulturprojekt in Düsseldorf" data-en="An African education and culture project in Düsseldorf">Ein afrikanisches Bildungs- und Kulturprojekt in Düsseldorf</h2>
+        <h2 data-de="Afrikanische Bildung, Kultur und Integration in Düsseldorf" data-en="African education, culture and integration in Düsseldorf">Afrikanische Bildung, Kultur und Integration in Düsseldorf</h2>
       </div>
       <div class="two-col">
         <div class="glass-card">
-          <p data-de="Unser Ziel ist es, Menschen durch praktische Bildung, digitale Kompetenzen und kulturelle Aktivitäten zu stärken. Besonders Frauen, Kinder und Jugendliche erhalten einen geschützten Raum zum Lernen, Austauschen und Wachsen." data-en="Our goal is to strengthen people through practical education, digital skills and cultural activities. Women, children and young people receive a supportive space to learn, connect and grow.">Unser Ziel ist es, Menschen durch praktische Bildung, digitale Kompetenzen und kulturelle Aktivitäten zu stärken. Besonders Frauen, Kinder und Jugendliche erhalten einen geschützten Raum zum Lernen, Austauschen und Wachsen.</p>
+          <p data-de="Wir schaffen einen würdevollen Raum, in dem Menschen praktische Fähigkeiten lernen, Gemeinschaft erleben und kulturelle Identität bewahren können. Unser Schwerpunkt liegt auf Frauenförderung, Kinder- und Jugendarbeit, digitaler Bildung und Integration." data-en="We create a dignified space where people learn practical skills, experience community and preserve cultural identity. Our focus is women empowerment, youth development, digital education and integration.">Wir schaffen einen würdevollen Raum, in dem Menschen praktische Fähigkeiten lernen, Gemeinschaft erleben und kulturelle Identität bewahren können. Unser Schwerpunkt liegt auf Frauenförderung, Kinder- und Jugendarbeit, digitaler Bildung und Integration.</p>
+          <ul class="check-list">
+            <li data-de="Niedrigschwellige Lernangebote" data-en="Accessible learning opportunities">Niedrigschwellige Lernangebote</li>
+            <li data-de="Kulturelle und musikalische Aktivitäten" data-en="Cultural and music activities">Kulturelle und musikalische Aktivitäten</li>
+            <li data-de="Gemeinschaftliche Unterstützung" data-en="Community-based support">Gemeinschaftliche Unterstützung</li>
+          </ul>
         </div>
         <img class="rounded-img" src="assets/images/classroom-activity.jpg" alt="Community learning session in Düsseldorf" />
       </div>
@@ -75,13 +87,25 @@
     <section class="programmes section-pad" id="programmes">
       <div class="section-head center">
         <p class="eyebrow" data-de="Unsere Programme" data-en="Our programmes">Unsere Programme</p>
-        <h2 data-de="Lernen, Teilhabe und kulturelle Entwicklung" data-en="Learning, participation and cultural development">Lernen, Teilhabe und kulturelle Entwicklung</h2>
+        <h2 data-de="Praktische Bildung für Alltag, Arbeit und Teilhabe" data-en="Practical education for everyday life, work and participation">Praktische Bildung für Alltag, Arbeit und Teilhabe</h2>
       </div>
       <div class="cards">
         <article class="card"><span class="icon">✍🏾</span><h3 data-de="Alphabetisierung" data-en="Literacy">Alphabetisierung</h3><p data-de="Lesen und Schreiben für Frauen und Erwachsene." data-en="Reading and writing support for women and adults.">Lesen und Schreiben für Frauen und Erwachsene.</p></article>
         <article class="card"><span class="icon">💻</span><h3 data-de="Computerkurse" data-en="Computer training">Computerkurse</h3><p data-de="E-Mail, PowerPoint, Excel und digitale Grundlagen." data-en="Email, PowerPoint, Excel and basic digital skills.">E-Mail, PowerPoint, Excel und digitale Grundlagen.</p></article>
-        <article class="card"><span class="icon">🎹</span><h3 data-de="Musikunterricht" data-en="Music lessons">Musikunterricht</h3><p data-de="Klavier- und Gitarrenunterricht für Kinder und Jugendliche." data-en="Keyboard and guitar lessons for children and young people.">Klavier- und Gitarrenunterricht für Kinder und Jugendliche.</p></article>
+        <article class="card"><span class="icon">🎹</span><h3 data-de="Musik & Kultur" data-en="Music & culture">Musik & Kultur</h3><p data-de="Klavier- und Gitarrenunterricht für Kinder und Jugendliche." data-en="Keyboard and guitar lessons for children and young people.">Klavier- und Gitarrenunterricht für Kinder und Jugendliche.</p></article>
         <article class="card"><span class="icon">🤝🏾</span><h3 data-de="Integration" data-en="Integration">Integration</h3><p data-de="Gemeinschaft, Orientierung und kulturelle Bildungsaktivitäten." data-en="Community, orientation and cultural education activities.">Gemeinschaft, Orientierung und kulturelle Bildungsaktivitäten.</p></article>
+      </div>
+    </section>
+
+    <section class="events section-pad" id="events">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Events & Aktivitäten" data-en="Events & activities">Events & Aktivitäten</p>
+        <h2 data-de="Aktuelle Treffen und Gemeinschaftsangebote" data-en="Current sessions and community activities">Aktuelle Treffen und Gemeinschaftsangebote</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card"><span class="date">Do</span><h3>Computer & Literacy Session</h3><p>17:00–19:00 · Rosmarstraße 31</p></article>
+        <article class="event-card"><span class="date">Sa</span><h3>Youth Music & Culture</h3><p>16:00–18:00 · Keyboard, guitar and learning support</p></article>
+        <article class="event-card highlight"><span class="date">Now</span><h3 data-de="GoFundMe Unterstützungsprojekt" data-en="GoFundMe support project">GoFundMe Unterstützungsprojekt</h3><p data-de="Helfen Sie mit Lernmaterial, Geräten und Raumkosten." data-en="Help with learning materials, devices and room costs.">Helfen Sie mit Lernmaterial, Geräten und Raumkosten.</p></article>
       </div>
     </section>
 
@@ -89,7 +113,7 @@
       <div class="two-col reverse">
         <div>
           <p class="eyebrow" data-de="Aktuelles Projekt" data-en="Current project">Aktuelles Projekt</p>
-          <h2 data-de="Women who are computer illiterate and adults education" data-en="Women who are computer illiterate and adults education">Women who are computer illiterate and adults education</h2>
+          <h2>Women who are computer illiterate and adults education</h2>
           <p data-de="Wir sammeln Spenden über GoFundMe, um Lernmaterialien, digitale Geräte, Musikzubehör und Raumkosten für unsere Bildungsangebote zu unterstützen." data-en="We are raising funds through GoFundMe to support learning materials, digital devices, music resources and room costs for our education activities.">Wir sammeln Spenden über GoFundMe, um Lernmaterialien, digitale Geräte, Musikzubehör und Raumkosten für unsere Bildungsangebote zu unterstützen.</p>
           <div class="project-list">
             <span data-de="Laptops & Tablets" data-en="Laptops & tablets">Laptops & Tablets</span>
@@ -120,6 +144,9 @@
           <p class="eyebrow" data-de="Unterstützen" data-en="Support us">Unterstützen</p>
           <h2 data-de="Helfen Sie uns, Bildung zugänglich zu machen" data-en="Help us make education accessible">Helfen Sie uns, Bildung zugänglich zu machen</h2>
           <p data-de="Ihre Spende unterstützt direkt unsere Kurse, Materialien und Aktivitäten für Frauen, Kinder und Jugendliche in Düsseldorf." data-en="Your donation directly supports our classes, materials and activities for women, children and young people in Düsseldorf.">Ihre Spende unterstützt direkt unsere Kurse, Materialien und Aktivitäten für Frauen, Kinder und Jugendliche in Düsseldorf.</p>
+          <div class="donation-tiers">
+            <span>€25 · Lernmaterial</span><span>€50 · Computerkurs</span><span>€100 · Teilnehmer fördern</span>
+          </div>
           <div class="bank-card">
             <h3>Bankverbindung</h3>
             <p><strong>Ojemene Egbe</strong></p>
@@ -132,6 +159,27 @@
           <p data-de="QR-Code scannen und über GoFundMe spenden." data-en="Scan the QR code and donate through GoFundMe.">QR-Code scannen und über GoFundMe spenden.</p>
         </div>
       </div>
+    </section>
+
+    <section class="volunteer section-pad" id="volunteer">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Mitmachen" data-en="Volunteer">Mitmachen</p>
+        <h2 data-de="Werden Sie Teil unserer Gemeinschaft" data-en="Become part of our community">Werden Sie Teil unserer Gemeinschaft</h2>
+        <p data-de="Möchten Sie unterrichten, unterstützen, spenden oder als Partner mitwirken? Schreiben Sie uns direkt." data-en="Would you like to teach, support, donate or partner with us? Send us a direct message.">Möchten Sie unterrichten, unterstützen, spenden oder als Partner mitwirken? Schreiben Sie uns direkt.</p>
+      </div>
+      <form class="contact-form" action="mailto:info.afrikanhilfe@gmail.com" method="post" enctype="text/plain">
+        <input name="Name" placeholder="Name" required>
+        <input name="Email" type="email" placeholder="Email" required>
+        <select name="Interest">
+          <option>Volunteer / Ehrenamt</option>
+          <option>Programme participant / Teilnehmer</option>
+          <option>Sponsor / Partner</option>
+          <option>General contact / Allgemein</option>
+        </select>
+        <textarea name="Message" rows="5" placeholder="Message / Nachricht"></textarea>
+        <button class="btn primary" type="submit" data-de="Nachricht senden" data-en="Send message">Nachricht senden</button>
+        <a class="btn whatsapp" href="https://wa.me/4915212462521" data-de="WhatsApp öffnen" data-en="Open WhatsApp">WhatsApp öffnen</a>
+      </form>
     </section>
 
     <section class="contact section-pad" id="contact">
@@ -150,20 +198,9 @@
 
   <footer class="footer">
     <p>© 2026 Afrikanische Hilfe Düsseldorf. Bildung • Kultur • Integration.</p>
-    <p><a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+    <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
 
-  <script>
-    const toggle = document.getElementById('langToggle');
-    let lang = 'de';
-    toggle.addEventListener('click', () => {
-      lang = lang === 'de' ? 'en' : 'de';
-      document.documentElement.lang = lang;
-      toggle.textContent = lang === 'de' ? 'EN' : 'DE';
-      document.querySelectorAll('[data-de][data-en]').forEach(el => {
-        el.textContent = el.dataset[lang];
-      });
-    });
-  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
