@@ -52,6 +52,29 @@ a { color: inherit; text-decoration: none; }
   border-radius: 999px;
 }
 
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #eef3ed;
+  padding: 5px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.08);
+}
+.lang-btn {
+  border: 0;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  color: var(--green-dark);
+  background: transparent;
+}
+.lang-btn.active {
+  background: var(--green-dark);
+  color: white;
+}
+
 .hero {
   min-height: 82vh;
   display: grid;
@@ -183,7 +206,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 860px) {
+  .navbar { align-items: flex-start; }
   .nav-links { display: none; }
+  .language-switch { margin-left: auto; }
   .hero, .split-section, .donation-section, .grid.three {
     grid-template-columns: 1fr;
   }
