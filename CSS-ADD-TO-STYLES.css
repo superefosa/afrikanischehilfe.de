@@ -1,0 +1,47 @@
+/* Clean flyer-style landing hero: image first, no writing overlay */
+.landing-clean-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 24px 60px;
+  background: radial-gradient(circle at top, rgba(212, 160, 23, 0.16), transparent 34%), #041f1a;
+  overflow: hidden;
+}
+
+.landing-clean-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(4,31,26,0.96), rgba(4,31,26,0.34), rgba(4,31,26,0.96)),
+    linear-gradient(180deg, rgba(0,0,0,0.35), transparent 35%, rgba(0,0,0,0.55));
+  z-index: 1;
+}
+
+.landing-clean-image {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1120px);
+  max-height: calc(100vh - 190px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+  border: 1px solid rgba(212, 160, 23, 0.35);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .landing-clean-hero {
+    padding: 105px 14px 40px;
+    min-height: 88vh;
+  }
+
+  .landing-clean-image {
+    width: 100%;
+    max-height: 70vh;
+    border-radius: 18px;
+  }
+}
