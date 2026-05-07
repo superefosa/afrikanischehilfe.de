@@ -167,19 +167,60 @@
         <h2 data-de="Werden Sie Teil unserer Gemeinschaft" data-en="Become part of our community">Werden Sie Teil unserer Gemeinschaft</h2>
         <p data-de="Möchten Sie unterrichten, unterstützen, spenden oder als Partner mitwirken? Schreiben Sie uns direkt." data-en="Would you like to teach, support, donate or partner with us? Send us a direct message.">Möchten Sie unterrichten, unterstützen, spenden oder als Partner mitwirken? Schreiben Sie uns direkt.</p>
       </div>
-      <form class="contact-form" action="mailto:info.afrikanhilfe@gmail.com" method="post" enctype="text/plain">
-        <input name="Name" placeholder="Name" required>
-        <input name="Email" type="email" placeholder="Email" required>
-        <select name="Interest">
-          <option>Volunteer / Ehrenamt</option>
-          <option>Programme participant / Teilnehmer</option>
-          <option>Sponsor / Partner</option>
-          <option>General contact / Allgemein</option>
-        </select>
-        <textarea name="Message" rows="5" placeholder="Message / Nachricht"></textarea>
-        <button class="btn primary" type="submit" data-de="Nachricht senden" data-en="Send message">Nachricht senden</button>
-        <a class="btn whatsapp" href="https://wa.me/4915212462521" data-de="WhatsApp öffnen" data-en="Open WhatsApp">WhatsApp öffnen</a>
-      </form>
+      <form 
+  class="contact-form"
+  action="https://formsubmit.co/info.afrikahilfe@gmail.com"
+  method="POST">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Afrikanische Hilfe Submission">
+  <input type="hidden" name="_next" value="https://afrikanischehilfe.de">
+
+  <input 
+    name="Name"
+    type="text"
+    placeholder="Name"
+    required
+  >
+
+  <input 
+    name="Email"
+    type="email"
+    placeholder="Email"
+    required
+  >
+
+  <select name="Interest">
+    <option>Volunteer / Ehrenamt</option>
+    <option>Programme participant / Teilnehmer</option>
+    <option>Sponsor / Partner</option>
+    <option>General contact / Allgemein</option>
+  </select>
+
+  <textarea 
+    name="Message"
+    rows="5"
+    placeholder="Message / Nachricht">
+  </textarea>
+
+  <button 
+    class="btn primary"
+    type="submit"
+    data-de="Nachricht senden"
+    data-en="Send message">
+    Nachricht senden
+  </button>
+
+  <a 
+    class="btn whatsapp"
+    href="https://wa.me/4915212462521"
+    target="_blank"
+    data-de="WhatsApp öffnen"
+    data-en="Open WhatsApp">
+    WhatsApp öffnen
+  </a>
+
+</form>
     </section>
 
     <section class="contact section-pad" id="contact">
