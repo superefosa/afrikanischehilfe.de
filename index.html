@@ -3,76 +3,245 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder, Jugendliche und Familien mit Bildung, Computerkursen, Kultur, Musik, Welfare-Projekten und Integration." />
-  <meta name="keywords" content="Afrikanische Hilfe Düsseldorf, Integration Düsseldorf, Computerkurs Düsseldorf, Alphabetisierung, single mothers support, widows support, African community Düsseldorf" />
-  <meta property="og:title" content="Afrikanische Hilfe Düsseldorf | Startseite" />
-  <meta property="og:description" content="Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder, Jugendliche und Familien mit Bildung, Computerkursen, Kultur, Musik, Welfare-Projekten und Integration." />
-  <meta property="og:image" content="assets/images/programme-flyer.jpg" />
+  <meta name="description" content="Afrikanische Hilfe Düsseldorf unterstützt Frauen, Kinder, Jugendliche und Familien mit Bildung, Computerkursen, Kultur, Musik und Integration." />
+  <meta name="keywords" content="Afrikanische Hilfe Düsseldorf, Integration Düsseldorf, Computerkurs Düsseldorf, Alphabetisierung, African community Düsseldorf" />
+  <meta property="og:title" content="Afrikanische Hilfe Düsseldorf" />
+  <meta property="og:description" content="Bildung, Kultur und Integration für afrikanische Familien in Düsseldorf." />
+  <meta property="og:image" content="assets/images/classroom-activity.jpg" />
   <meta property="og:type" content="website" />
-  <title>Afrikanische Hilfe Düsseldorf | Startseite</title>
+  <title>Afrikanische Hilfe Düsseldorf | Bildung • Kultur • Integration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Afrikanische Hilfe Düsseldorf home">
+      <span class="brand-mark">AH</span>
+      <span>Afrikanische Hilfe<br><small>Düsseldorf</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#about" data-de="Über uns" data-en="About">Über uns</a>
+      <a href="#programmes" data-de="Programme" data-en="Programmes">Programme</a>
+      <a href="#events" data-de="Events" data-en="Events">Events</a>
+      <a href="#support" data-de="Unterstützen" data-en="Support">Unterstützen</a>
+      <a href="#volunteer" data-de="Mitmachen" data-en="Volunteer">Mitmachen</a>
+      <a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" type="button">EN</button>
+  </header>
 
-<header class="site-header" id="siteHeader">
-  <a class="brand" href="index.html" aria-label="Afrikanische Hilfe Düsseldorf home">
-    <span class="brand-mark">AH</span>
-    <span>Afrikanische Hilfe<br><small>Düsseldorf</small></span>
-  </a>
-  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">☰</button>
-  <nav class="nav" id="mainNav" aria-label="Main navigation">
-    <a class="active" href="index.html" data-de="Startseite" data-en="Home">Startseite</a>
-    <a class="" href="about.html" data-de="Über uns" data-en="About">Über uns</a>
-    <a class="" href="programmes.html" data-de="Programme" data-en="Programmes">Programme</a>
-    <a class="" href="events.html" data-de="Events" data-en="Events">Events</a>
-    <a class="" href="projects.html" data-de="Projekte" data-en="Projects">Projekte</a>
-    <a class="" href="support.html" data-de="Unterstützen" data-en="Support">Unterstützen</a>
-    <a class="" href="volunteer.html" data-de="Mitmachen" data-en="Volunteer">Mitmachen</a>
-    <a class="" href="contact.html" data-de="Kontakt" data-en="Contact">Kontakt</a>
-  </nav>
-  <button class="lang-toggle" id="langToggle" type="button">EN</button>
-</header>
-
-<main>
-  <section class="hero">
-    <img class="hero-bg" src="assets/images/mother-child-community-1.jpg" alt="">
-    <div class="hero-inner">
-      <div>
-        <p class="eyebrow" data-de="Bildung • Kultur • Integration • Welfare" data-en="Education • Culture • Integration • Welfare">Bildung • Kultur • Integration • Welfare</p>
+  <main id="home">
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/classroom-activity.jpg">
+        <source src="assets/videos/community-learning-session.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="pattern-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-de="Bildung • Kultur • Integration" data-en="Education • Culture • Integration">Bildung • Kultur • Integration</p>
         <h1 data-de="Ein Zuhause für Lernen, Kultur und Gemeinschaft" data-en="A home for learning, culture and community">Ein Zuhause für Lernen, Kultur und Gemeinschaft</h1>
-        <p class="hero-text" data-de="Afrikanische Hilfe Düsseldorf stärkt Frauen, Kinder, Jugendliche, alleinerziehende Mütter und Witwen durch Bildung, digitale Kurse, Kultur, Musik und konkrete Unterstützung." data-en="Afrikanische Hilfe Düsseldorf empowers women, children, young people, single mothers and widows through education, digital training, culture, music and practical support.">Afrikanische Hilfe Düsseldorf stärkt Frauen, Kinder, Jugendliche, alleinerziehende Mütter und Witwen durch Bildung, digitale Kurse, Kultur, Musik und konkrete Unterstützung.</p>
-        <a class="btn primary" href="support.html" data-de="Jetzt unterstützen" data-en="Support now">Jetzt unterstützen</a>
-        <a class="btn secondary" href="programmes.html" data-de="Programme ansehen" data-en="View programmes">Programme ansehen</a>
+        <p class="hero-text" data-de="Afrikanische Hilfe Düsseldorf stärkt Frauen, Kinder, Jugendliche und Familien durch Alphabetisierung, digitale Bildung, Musik und gemeinschaftliche Integrationsangebote." data-en="Afrikanische Hilfe Düsseldorf empowers women, children, young people and families through literacy, digital education, music and community-based integration support.">Afrikanische Hilfe Düsseldorf stärkt Frauen, Kinder, Jugendliche und Familien durch Alphabetisierung, digitale Bildung, Musik und gemeinschaftliche Integrationsangebote.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#support" data-de="Jetzt unterstützen" data-en="Support now">Jetzt unterstützen</a>
+          <a class="btn secondary" href="#volunteer" data-de="Mitmachen" data-en="Get involved">Mitmachen</a>
+        </div>
       </div>
-      <div class="flyer-landing">
-        <img src="assets/images/programme-flyer.jpg" alt="Afrikanische Hilfe Düsseldorf programme flyer">
-      </div>
-    </div>
-  </section>
-  <section class="section-pad">
-    <div class="container impact-grid">
-      <div><strong>2</strong><span data-de="Kurstermine pro Woche" data-en="Sessions per week">Kurstermine pro Woche</span></div>
-      <div><strong>4+</strong><span data-de="Lern- und Hilfsbereiche" data-en="Learning and support areas">Lern- und Hilfsbereiche</span></div>
-      <div><strong>€25</strong><span data-de="hilft mit Lernmaterial" data-en="supports learning materials">hilft mit Lernmaterial</span></div>
-      <div><strong>100%</strong><span data-de="Gemeinschaftlich getragen" data-en="Community driven">Gemeinschaftlich getragen</span></div>
-    </div>
-  </section>
-  <section class="section-pad">
-    <div class="container grid three">
-      <article class="card"><span class="icon">💻</span><h3>Bildung & Computerkurse</h3><p>Alphabetisierung, E-Mail, PowerPoint, Excel und digitale Grundlagen.</p></article>
-      <article class="card"><span class="icon">👩‍👧</span><h3>Unterstützung für Mütter</h3><p>Hilfe für alleinerziehende Mütter, damit Kinder an außerschulischen Aktivitäten teilnehmen können.</p></article>
-      <article class="card"><span class="icon">🤲🏾</span><h3>Witwen & Welfare</h3><p>Spenden, Lebensmittelhilfe, Geldzuwendungen und praktische Solidarität für Witwen und Familien.</p></article>
-    </div>
-  </section>
-</main>
+      <aside class="hero-card reveal delay">
+        <strong data-de="Wöchentliche Kurse" data-en="Weekly classes">Wöchentliche Kurse</strong>
+        <span>Donnerstag 17:00–19:00</span>
+        <span>Samstag 16:00–18:00</span>
+        <span>Rosmarstraße 31, 40235 Düsseldorf</span>
+      </aside>
+    </section>
 
-<footer class="footer">
-  <p>© 2026 Afrikanische Hilfe Düsseldorf. Bildung • Kultur • Integration • Welfare.</p>
-  <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
-</footer>
-<script src="scripts.js"></script>
+    <section class="impact section-pad" aria-label="Impact numbers">
+      <div class="impact-grid">
+        <div><strong>2</strong><span data-de="Kurstermine pro Woche" data-en="Sessions per week">Kurstermine pro Woche</span></div>
+        <div><strong>4+</strong><span data-de="Lernbereiche" data-en="Learning areas">Lernbereiche</span></div>
+        <div><strong>25€</strong><span data-de="hilft mit Lernmaterial" data-en="supports learning materials">hilft mit Lernmaterial</span></div>
+        <div><strong>100%</strong><span data-de="Gemeinschaftlich getragen" data-en="Community driven">Gemeinschaftlich getragen</span></div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="section-head">
+        <p class="eyebrow" data-de="Wer wir sind" data-en="Who we are">Wer wir sind</p>
+        <h2 data-de="Afrikanische Bildung, Kultur und Integration in Düsseldorf" data-en="African education, culture and integration in Düsseldorf">Afrikanische Bildung, Kultur und Integration in Düsseldorf</h2>
+      </div>
+      <div class="two-col">
+        <div class="glass-card">
+          <p data-de="Wir schaffen einen würdevollen Raum, in dem Menschen praktische Fähigkeiten lernen, Gemeinschaft erleben und kulturelle Identität bewahren können. Unser Schwerpunkt liegt auf Frauenförderung, Kinder- und Jugendarbeit, digitaler Bildung und Integration." data-en="We create a dignified space where people learn practical skills, experience community and preserve cultural identity. Our focus is women empowerment, youth development, digital education and integration.">Wir schaffen einen würdevollen Raum, in dem Menschen praktische Fähigkeiten lernen, Gemeinschaft erleben und kulturelle Identität bewahren können. Unser Schwerpunkt liegt auf Frauenförderung, Kinder- und Jugendarbeit, digitaler Bildung und Integration.</p>
+          <ul class="check-list">
+            <li data-de="Niedrigschwellige Lernangebote" data-en="Accessible learning opportunities">Niedrigschwellige Lernangebote</li>
+            <li data-de="Kulturelle und musikalische Aktivitäten" data-en="Cultural and music activities">Kulturelle und musikalische Aktivitäten</li>
+            <li data-de="Gemeinschaftliche Unterstützung" data-en="Community-based support">Gemeinschaftliche Unterstützung</li>
+          </ul>
+        </div>
+        <img class="rounded-img" src="assets/images/classroom-activity.jpg" alt="Community learning session in Düsseldorf" />
+      </div>
+    </section>
+
+    <section class="programmes section-pad" id="programmes">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Unsere Programme" data-en="Our programmes">Unsere Programme</p>
+        <h2 data-de="Praktische Bildung für Alltag, Arbeit und Teilhabe" data-en="Practical education for everyday life, work and participation">Praktische Bildung für Alltag, Arbeit und Teilhabe</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="icon">✍🏾</span><h3 data-de="Alphabetisierung" data-en="Literacy">Alphabetisierung</h3><p data-de="Lesen und Schreiben für Frauen und Erwachsene." data-en="Reading and writing support for women and adults.">Lesen und Schreiben für Frauen und Erwachsene.</p></article>
+        <article class="card"><span class="icon">💻</span><h3 data-de="Computerkurse" data-en="Computer training">Computerkurse</h3><p data-de="E-Mail, PowerPoint, Excel und digitale Grundlagen." data-en="Email, PowerPoint, Excel and basic digital skills.">E-Mail, PowerPoint, Excel und digitale Grundlagen.</p></article>
+        <article class="card"><span class="icon">🎹</span><h3 data-de="Musik & Kultur" data-en="Music & culture">Musik & Kultur</h3><p data-de="Klavier- und Gitarrenunterricht für Kinder und Jugendliche." data-en="Keyboard and guitar lessons for children and young people.">Klavier- und Gitarrenunterricht für Kinder und Jugendliche.</p></article>
+        <article class="card"><span class="icon">🤝🏾</span><h3 data-de="Integration" data-en="Integration">Integration</h3><p data-de="Gemeinschaft, Orientierung und kulturelle Bildungsaktivitäten." data-en="Community, orientation and cultural education activities.">Gemeinschaft, Orientierung und kulturelle Bildungsaktivitäten.</p></article>
+      </div>
+    </section>
+
+    <section class="events section-pad" id="events">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Events & Aktivitäten" data-en="Events & activities">Events & Aktivitäten</p>
+        <h2 data-de="Aktuelle Treffen und Gemeinschaftsangebote" data-en="Current sessions and community activities">Aktuelle Treffen und Gemeinschaftsangebote</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card"><span class="date">Do</span><h3>Computer & Literacy Session</h3><p>17:00–19:00 · Rosmarstraße 31</p></article>
+        <article class="event-card"><span class="date">Sa</span><h3>Youth Music & Culture</h3><p>16:00–18:00 · Keyboard, guitar and learning support</p></article>
+        <article class="event-card highlight"><span class="date">Now</span><h3 data-de="GoFundMe Unterstützungsprojekt" data-en="GoFundMe support project">GoFundMe Unterstützungsprojekt</h3><p data-de="Helfen Sie mit Lernmaterial, Geräten und Raumkosten." data-en="Help with learning materials, devices and room costs.">Helfen Sie mit Lernmaterial, Geräten und Raumkosten.</p></article>
+      </div>
+    </section>
+
+    <section class="projects section-pad" id="projects">
+      <div class="two-col reverse">
+        <div>
+          <p class="eyebrow" data-de="Aktuelles Projekt" data-en="Current project">Aktuelles Projekt</p>
+          <h2>Women who are computer illiterate and adults education</h2>
+          <p data-de="Wir sammeln Spenden über GoFundMe, um Lernmaterialien, digitale Geräte, Musikzubehör und Raumkosten für unsere Bildungsangebote zu unterstützen." data-en="We are raising funds through GoFundMe to support learning materials, digital devices, music resources and room costs for our education activities.">Wir sammeln Spenden über GoFundMe, um Lernmaterialien, digitale Geräte, Musikzubehör und Raumkosten für unsere Bildungsangebote zu unterstützen.</p>
+          <div class="project-list">
+            <span data-de="Laptops & Tablets" data-en="Laptops & tablets">Laptops & Tablets</span>
+            <span data-de="Unterrichtsmaterial" data-en="Learning materials">Unterrichtsmaterial</span>
+            <span data-de="Musikzubehör" data-en="Music resources">Musikzubehör</span>
+            <span data-de="Raumkosten" data-en="Room costs">Raumkosten</span>
+          </div>
+        </div>
+        <div class="flyer-frame"><img src="assets/images/programme-flyer.jpg" alt="Afrikanische Hilfe Düsseldorf programme flyer" /></div>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Einblicke" data-en="Inside our work">Einblicke</p>
+        <h2 data-de="Unsere Aktivitäten" data-en="Our activities">Unsere Aktivitäten</h2>
+      </div>
+      <div class="media-grid">
+        <div class="media-card large"><video controls poster="assets/images/classroom-activity.jpg"><source src="assets/videos/community-learning-session.mp4" type="video/mp4"></video></div>
+        <div class="media-card"><img src="assets/images/classroom-activity.jpg" alt="Participants in a learning activity" /></div>
+        <div class="media-card"><img src="assets/images/programme-flyer.jpg" alt="Programme flyer" /></div>
+      </div>
+    </section>
+
+    <section class="support section-pad" id="support">
+      <div class="support-box">
+        <div>
+          <p class="eyebrow" data-de="Unterstützen" data-en="Support us">Unterstützen</p>
+          <h2 data-de="Helfen Sie uns, Bildung zugänglich zu machen" data-en="Help us make education accessible">Helfen Sie uns, Bildung zugänglich zu machen</h2>
+          <p data-de="Ihre Spende unterstützt direkt unsere Kurse, Materialien und Aktivitäten für Frauen, Kinder und Jugendliche in Düsseldorf." data-en="Your donation directly supports our classes, materials and activities for women, children and young people in Düsseldorf.">Ihre Spende unterstützt direkt unsere Kurse, Materialien und Aktivitäten für Frauen, Kinder und Jugendliche in Düsseldorf.</p>
+          <div class="donation-tiers">
+            <span>€25 · Lernmaterial</span><span>€50 · Computerkurs</span><span>€100 · Teilnehmer fördern</span>
+          </div>
+          <div class="bank-card">
+            <h3>Bankverbindung</h3>
+            <p><strong>Ojemene Egbe</strong></p>
+            <p>IBAN: DE59 1001 0178 4670 1228 00</p>
+            <p>BIC/SWIFT-Code: REVODEB2</p>
+          </div>
+        </div>
+        <div class="qr-card">
+          <img src="assets/images/gofundme-qr.png" alt="GoFundMe QR Code" />
+          <p data-de="QR-Code scannen und über GoFundMe spenden." data-en="Scan the QR code and donate through GoFundMe.">QR-Code scannen und über GoFundMe spenden.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="volunteer section-pad" id="volunteer">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Mitmachen" data-en="Volunteer">Mitmachen</p>
+        <h2 data-de="Werden Sie Teil unserer Gemeinschaft" data-en="Become part of our community">Werden Sie Teil unserer Gemeinschaft</h2>
+        <p data-de="Möchten Sie unterrichten, unterstützen, spenden oder als Partner mitwirken? Schreiben Sie uns direkt." data-en="Would you like to teach, support, donate or partner with us? Send us a direct message.">Möchten Sie unterrichten, unterstützen, spenden oder als Partner mitwirken? Schreiben Sie uns direkt.</p>
+      </div>
+      <form 
+  class="contact-form"
+  action="https://formsubmit.co/info.afrikahilfe@gmail.com"
+  method="POST">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Afrikanische Hilfe Submission">
+  <input type="hidden" name="_next" value="https://afrikanischehilfe.de">
+
+  <input 
+    name="Name"
+    type="text"
+    placeholder="Name"
+    required
+  >
+
+  <input 
+    name="Email"
+    type="email"
+    placeholder="Email"
+    required
+  >
+
+  <select name="Interest">
+    <option>Volunteer / Ehrenamt</option>
+    <option>Programme participant / Teilnehmer</option>
+    <option>Sponsor / Partner</option>
+    <option>General contact / Allgemein</option>
+  </select>
+
+  <textarea 
+    name="Message"
+    rows="5"
+    placeholder="Message / Nachricht">
+  </textarea>
+
+  <button 
+    class="btn primary"
+    type="submit"
+    data-de="Nachricht senden"
+    data-en="Send message">
+    Nachricht senden
+  </button>
+
+  <a 
+    class="btn whatsapp"
+    href="https://wa.me/4915212462521"
+    target="_blank"
+    data-de="WhatsApp öffnen"
+    data-en="Open WhatsApp">
+    WhatsApp öffnen
+  </a>
+
+</form>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="section-head center">
+        <p class="eyebrow" data-de="Kontakt" data-en="Contact">Kontakt</p>
+        <h2 data-de="Mitmachen, lernen oder unterstützen" data-en="Join, learn or support">Mitmachen, lernen oder unterstützen</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:info.afrikanhilfe@gmail.com">info.afrikanhilfe@gmail.com</a>
+        <a href="tel:+4915212462521">+49 1521 2462 521</a>
+        <a href="tel:+4915753856940">+49 1575 3856 940</a>
+        <span>Rosmarstraße 31, 40235 Düsseldorf</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Afrikanische Hilfe Düsseldorf. Bildung • Kultur • Integration.</p>
+    <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
