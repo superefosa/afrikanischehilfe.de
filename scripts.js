@@ -18,15 +18,26 @@ function setLang(lang) {
 
   document.documentElement.lang = lang;
 
+  // Normal text
   document.querySelectorAll("[data-de][data-en]").forEach((el) => {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
 
+  // Input placeholders
+  document.querySelectorAll("[data-de-placeholder][data-en-placeholder]").forEach((el) => {
+    el.placeholder = el.getAttribute(`data-${lang}-placeholder`);
+  });
+
+  // Select options
+  document.querySelectorAll("option[data-de][data-en]").forEach((el) => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+  // Toggle button text
   if (langToggle) {
     langToggle.textContent = lang === "de" ? "EN" : "DE";
   }
 }
-
 if (langToggle) {
   langToggle.addEventListener("click", () => {
     setLang(currentLang === "de" ? "en" : "de");
