@@ -29,5 +29,5 @@ How to install:
 
 Important:
 - The form uses FormSubmit. First submission may require confirming the email address:
-  info.afrikahilfe@gmail.com
+  infoafrikahilfe@gmail.com
 - No database is required.
