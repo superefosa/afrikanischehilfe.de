@@ -5,6 +5,13 @@ if (menuToggle && mainNav) {
   menuToggle.addEventListener("click", () => {
     mainNav.classList.toggle("open");
   });
+  
+  // Close menu on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mainNav.classList.contains("open")) {
+      mainNav.classList.remove("open");
+    }
+  });
 }
 
 const langToggle = document.getElementById("langToggle");
@@ -38,6 +45,7 @@ function setLang(lang) {
     langToggle.textContent = lang === "de" ? "EN" : "DE";
   }
 }
+
 if (langToggle) {
   langToggle.addEventListener("click", () => {
     setLang(currentLang === "de" ? "en" : "de");
@@ -45,3 +53,25 @@ if (langToggle) {
 }
 
 setLang(currentLang);
+
+// Lazy loading with Intersection Observer for better performance
+if ("IntersectionObserver" in window) {
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute("data-src");
+        }
+        observer.unobserve(img);
+      }
+    });
+  }, {
+    rootMargin: "50px"
+  });
+
+  document.querySelectorAll("img[data-src]").forEach(img => {
+    imageObserver.observe(img);
+  });
+}
